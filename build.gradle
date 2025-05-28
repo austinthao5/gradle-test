@@ -1,0 +1,16 @@
+plugins {
+    id 'application'
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Add your dependencies here
+}
+
+application {
+    mainClass = 'App'  // change this if your main class is in a package
+}
