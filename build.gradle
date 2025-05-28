@@ -1,16 +1,28 @@
 plugins {
-    id 'application'
     id 'java'
+    id 'application'
+    id 'com.diffplug.spotless' version '6.21.0'  // add this line
 }
 
 repositories {
     mavenCentral()
 }
 
+spotless {
+    java {
+        googleJavaFormat('1.17.0')  // or another formatter/version
+        target 'src/**/*.java'
+    }
+}
+
 dependencies {
-    // Add your dependencies here
+    implementation 'com.google.guava:guava:32.1.2-jre' // example dependency
 }
 
 application {
     mainClass = 'App'  // change this if your main class is in a package
 }
+
+
+
+
