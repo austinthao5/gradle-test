@@ -3,12 +3,16 @@
  */
 package org.example
 
+import com.google.common.collect.ImmutableList
+
 class App {
     String getGreeting() {
-        return 'Hello World!'
+        'Hello World!'
     }
 
     static void main(String[] args) {
         println new App().greeting
+        ImmutableList<String> list = ImmutableList.of('a', 'b', 'c')
+        println list
     }
 }
