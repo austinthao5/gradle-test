@@ -14,5 +14,7 @@ class App {
         println new App().greeting
         ImmutableList<String> list = ImmutableList.of('a', 'b', 'c')
         println list
+        def nexusPassword = System.getenv("NEXUS_PASSWORD")
+        println "Nexus Password: ${nexusPassword}"
     }
 }
