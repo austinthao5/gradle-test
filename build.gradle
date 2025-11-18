@@ -43,5 +43,9 @@ test {
     testLogging {
         events "passed", "skipped", "failed"
     }
+    reports {
+        junitXml.required = true   // <-- this generates TEST-*.xml
+        html.required = true       // optional, keeps HTML report
+    }
 }
 
